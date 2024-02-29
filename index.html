@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandy</title>
+    <style>
+      :root {
+        --dark-color: #000;
+      }
+      body {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: var(--dark-color);
+        overflow: hidden;
+        perspective: 1000px;
+      }
+      .carta-container {
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        margin: 0 auto;
+      }
+      .carta {
+        background-color: #1c2043;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 28px;
+        padding: 10px;
+        color: rgb(171, 209, 234);
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      p {
+        padding: 10px;
+        font-size: 35px;
+        color: #f2cd74;
+        text-align: center;
+        margin: 10px 30px 10px 30px;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .night {
+        position: fixed;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(
+            ellipse at top,
+            transparent 0%,
+            var(--dark-color)
+          ),
+          radial-gradient(
+            ellipse at bottom,
+            var(--dark-color),
+            rgba(145, 233, 255, 0.2)
+          ),
+          repeating-linear-gradient(
+            220deg,
+            rgb(0, 0, 0) 0px,
+            rgb(0, 0, 0) 19px,
+            transparent 19px,
+            transparent 22px
+          ),
+          repeating-linear-gradient(
+            189deg,
+            rgb(0, 0, 0) 0px,
+            rgb(0, 0, 0) 19px,
+            transparent 19px,
+            transparent 22px
+          ),
+          repeating-linear-gradient(
+            148deg,
+            rgb(0, 0, 0) 0px,
+            rgb(0, 0, 0) 19px,
+            transparent 19px,
+            transparent 22px
+          ),
+          linear-gradient(90deg, rgb(7, 107, 42), rgb(240, 240, 240));
+      }
+      a.button {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background-color: #accfee;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carta-container">
+      <div class="night"></div>
+      <div class="carta">
+        <img src="sandia.png" alt="" />
+        <h1>29 DE FEBRERO 🍉</h1>
+        <p>TE CUIDARÉ PARA NO PENSARTE SOLO LOS 29 DE FEBRERO, TE QUIERO 💘</p>
+        <a href="flor.html" class="button">Da click</a>
+      </div>
+    </div>
+  </body>
+</html>
